@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Comming Soon</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>
+        .main{
+            background-image: url('images/background.png') ;
+        }
+        .rocket{
+            animation: rocket 4s linear infinite;
+        }
+        @keyframes rocket {
+            0%{
+                bottom: 0;
+                opacity: 0;
+            }
+            100%{
+                bottom: 105%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="main w-screen h-screen bg-center bg-cover px-[8%] relative">
+        <img src="images/logo.png" class="w-30 py-5 cursor-pointer">
+
+        <div class="top-1/2 absolute -translate-y-1/2 text-white">
+            <p>Website Is Under Maintenance</p>
+            <h1 class="text-4xl font-bold">We're <span class="text-[#ff3753]">Launching </span>Soon</h1>
+            <div class="flex">
+                <div class="basis-25 ">
+                    <p class="text-[40px] -mb-3.5 days" id="d">00</p>
+                    <span>Days</span>
+                </div>
+                <div class="basis-25 ">
+                    <p class="text-[40px] -mb-3.5" id="h">00</p>
+                    <span>Hours</span>
+                </div>
+                <div class="basis-25 ">
+                    <p class="text-[40px] -mb-3.5" id="m">00</p>
+                    <span>Minunts</span>
+                </div>
+                <div class="basis-25 ">
+                    <p class="text-[40px] -mb-3.5" id="s">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <button type="button" class="bg-transparent border-2 border-solid border-white outline-none py-3 px-6.25 text-white flex items-center mt-7.5 cursor-pointer">Learn More<img src="images/triangle.png" alt="" class="w-3.75 ml-2.5"></button>
+            <img src="images/rocket.png" alt="" class="w-62.5 absolute right-1/10 bottom-0 rocket">
+        </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
