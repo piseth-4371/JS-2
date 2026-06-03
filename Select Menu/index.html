@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Menu</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>
+        /* .bg{
+            background-image: linear-gradient(#f44336, #630228);
+    
+        } */
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-linear-to-bl from-[#f44336] to-[#630228] flex items-center justify-center bg">
+      <div class="w-87.5">
+        <div id="selectField" class="w-full py-3.75 px-5 box-border bg-[rgba(255,255,255,0.7)] rounded-lg flex items-center justify-between cursor-pointer mb-5">
+            <p id="setectText">Select Social Media</p>
+            <img src="images/arrow.png" alt="" class="w-3 rotate-180 transform-[0.5s] duration-75  ease-in-out"  id="arrowIcon">
+        </div>
+        <ul class="w-full bg-[rgba(255,255,255,0.7)] rounded-lg overflow-hidden  invisible" id="list">
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/facebook.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>Facebook</p>
+            </li>
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/youtube.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>Youtube</p>
+            </li>
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/pinterest.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>Pinterest</p>
+            </li>
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/whatsapp.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>WhatsApp</p>
+            </li>
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/instagram.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>Instagram</p>
+            </li>
+            <li class="options w-full py-3.75 pl-17.5 list-none box-border relative hover:bg-amber-50/50 cursor-pointer">
+                <img src="images/twitter.png" class="w-6.25 absolute top-3 left-6.25">
+                <p>Twitter</p>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
