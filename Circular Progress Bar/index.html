@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Progress Bar</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>
+        .outer{
+            box-shadow: 6px 6px 10px -1px rgba(0,0,0, 0.15), -6px -6px 10px -1px rgba(255,255,255, 0.7);
+        }
+        .inner{
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                        inset -4px -4px 6px -1px rgba(255, 255, 255,0.7),
+                        -0.5px -0.5px 0px rgba(255, 255,255,1),
+                        0.5px 0.5px 0px  rgba(0, 0, 0,0.1),
+                        0px 12px 10px -10px rgba(0, 0, 0, 0.01) ;
+        }
+        circle{
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 472;
+            stroke-dashoffset: 472;
+            animation: anim 2s linear forwards;
+        }
+        @keyframes anim {
+            100%{
+                stroke-dashoffset: 165;
+            }
+
+        }
+    </style>
+</head>
+<body class="bg-[#e3edf7] h-screen flex items-center justify-center">
+    <div class="skill w-40 h-40  relative ">
+        <div class="outer h-40 w-40 rounded-full p-5">
+            <div class="inner h-30 w-30 rounded-full flex items-center justify-center">
+                <div id="number" class="font-bold text-[#555] text-xl">
+                    65%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="absolute top-0 left-0">
+         <defs>
+            <linearGradient id="GradientColor">
+               <stop offset="0%" stop-color="#e91e63" />
+               <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+         </defs>
+         <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+         <defs>
+            <linearGradient id="GradientColor">
+               <stop offset="0%" stop-color="#e91e63" />
+               <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+         </defs>
+         <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+ </svg> -->
